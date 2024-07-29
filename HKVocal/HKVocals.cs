@@ -83,8 +83,8 @@ public sealed class HKVocals: Mod, IGlobalSettings<GlobalSettings>, ILocalSettin
             CreateAudioSource();
 
             // Set the menu style to the custom one
-            var tmpStyle = MenuStyles.Instance.styles.First(x => x.styleObject.name.Contains("HKVStyle"));
-            MenuStyles.Instance.SetStyle(MenuStyles.Instance.styles.ToList().IndexOf(tmpStyle), false);
+            //var tmpStyle = MenuStyles.Instance.styles.First(x => x.styleObject.name.Contains("HKVStyle"));
+            //MenuStyles.Instance.SetStyle(MenuStyles.Instance.styles.ToList().IndexOf(tmpStyle), false);
 
             InitAchievements();
 
@@ -132,9 +132,9 @@ public sealed class HKVocals: Mod, IGlobalSettings<GlobalSettings>, ILocalSettin
         {
             if (AudioLoaderAssemblyExists)
             {
-                args.self.Title.sprite = AssemblyUtils.GetSpriteFromResources(Random.Range(1,1000) == 1 && _globalSettings.settingsOpened 
-                    ? "Resources.Title_alt.png" 
-                    : "Resources.Title.png");
+                //args.self.Title.sprite = AssemblyUtils.GetSpriteFromResources(Random.Range(1,1000) == 1 && _globalSettings.settingsOpened 
+                //    ? "Resources.Title_alt.png" 
+                //    : "Resources.Title.png");
             }
             else
             {
